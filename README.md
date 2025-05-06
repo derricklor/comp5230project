@@ -17,45 +17,12 @@ labeled the known face in the database. Otherwise it is unknown.
 
 
 ## Table of Contents
-* [Tree View]
 * [Installation]
 * [Usage]
 * [Configuration]
-* [License](#license) (Optional)
+* [License]
 
-## Tree View
-project
-├── datasets
-│   ├── Faces
-│   	├──  test
-│   	├──  train
-│   	├──  valid
-│   	└── data.yaml
-│   └── Face-Detect
-│   	├──  test
-│   	├── train
-│   	├── valid
-│   	└── data.yaml
-├── known_faces
-│   ├── blacklist
-│   	└── face
-│  			└── Tim.jpg
-│   └── whitelist
-│   	└── face
-│   		├── Ben.jpg
-│    		├── Derrick.jpg
-│    		└── Josh.jpg
-├── faceAlign.py
-├── FaceDetectModelDemos.ipynb
-├── FaceDetectModelEval.ipynb
-├── FaceDetectModelTest.ipynb
-├── hog.py
-├── multiple_datasets.yaml
-├── randomSelectImages.py
-├── readme.txt
-├── shape_predictor_68_face_landmarks.dat
-├── yolo11n_FaceDetectModel_MD.pt
-└── yolo11n_FaceDetectModel_MD20.pt
+
 
 
 ## Installation
@@ -65,24 +32,23 @@ Python 3.10 is required. Can either start up conda environment and install depen
 in global path.
 The prerequisites were installed on 4/27/25 using the latest version up to this date.
 This can be done using pip commands: pip install <insert_here>
-cmake
-dlib
-ultralytics
-scikit-learn
-scikit-image
-imutils
-opencv-python
-numpy
-os
-time
+* cmake
+* dlib
+* ultralytics
+* scikit-learn
+* scikit-image
+* imutils
+* opencv-python
+* numpy
+* os
+* time
 
-Required files below are to be downloaded from the repository or found online.
-Required .pt files: yolo11n_FaceDetectModel_MD.pt, yolo11n_FaceDetectModel_MD20.pt
-Required .yaml files: multiple_datasets.yaml
-Required .dat files: shape_predictor_68_face_landmarks.dat
-Required custom .py files: hog.py, faceAlign.py, randomSelectImages.py
-Required custom .ipynb files: FaceDetectModelDemos.ipynb, FaceDetectModelTest.ipynb, 
-				FaceDetectModelEval.ipynb
+* Required files below are to be downloaded from the repository or found online.
+* Required .pt files: yolo11n_FaceDetectModel_MD.pt, yolo11n_FaceDetectModel_MD20.pt
+* Required .yaml files: multiple_datasets.yaml
+* Required .dat files: shape_predictor_68_face_landmarks.dat
+* Required custom .py files: hog.py, faceAlign.py, randomSelectImages.py
+* Required custom .ipynb files: FaceDetectModelDemos.ipynb, FaceDetectModelTest.ipynb, FaceDetectModelEval.ipynb
 
 Datasets used can be found using these links: 
 1. https://universe.roboflow.com/huanhoahoe/facedetect-jb2ph
@@ -102,13 +68,13 @@ The FaceDetectModelDemos.ipynb file: contains the necessary code needed to run d
 detection and recognition system live. Also contains instructions for how to train the models.
 There is no user interface other than the opencv2 window used in the demo.
 During the demo, keys q, r, f, k, z, x, and c are mapped for different uses.
-q = quit demo
-r = reload known faces list
-f = save cropped image of detected face in whitelist folder
-k = save cropped image of detected face in blacklist folder
-z = decrement the distance threshold
-x = increment the distance threshold
-c = change between cosine, correlation, and Euclidean distance metrics.
+* q = quit demo
+* r = reload known faces list
+* f = save cropped image of detected face in whitelist folder
+* k = save cropped image of detected face in blacklist folder
+* z = decrement the distance threshold
+* x = increment the distance threshold
+* c = change between cosine, correlation, and Euclidean distance metrics.
 
 FaceDetectModelTest.ipynb: Used to test code for debugging and exploratory analysis.
 
