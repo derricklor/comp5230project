@@ -1,0 +1,13 @@
+path: ../datasets  # dataset root dir 
+train: # train images (relative to 'path') combine two dataset directories, must have same classes 
+  - FaceDetect-5/train/images
+  - Faces/train/images 
+val: # val images (relative to 'path') 
+  - FaceDetect-5/valid/images
+  - Faces/valid/images
+test: # test images (optional)
+  - FaceDetect-5/test/images 
+  - Faces/test/images
+  
+nc: 1
+names: ['face']
