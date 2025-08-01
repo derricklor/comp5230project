@@ -43,7 +43,7 @@ This can be done using pip commands: ```pip install <insert_here>```
 * os
 * time
 
-# Required files below are to be downloaded from the repository or found online.
+### Required files below are to be downloaded from the repository or found online.
 * Required .pt files: yolo11n_FaceDetectModel_MD.pt, yolo11n_FaceDetectModel_MD20.pt
 * Required .yaml files: multiple_datasets.yaml
 * Required .dat files: shape_predictor_68_face_landmarks.dat
